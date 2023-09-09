@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="icon" href="https://static.vecteezy.com/system/resources/thumbnails/007/495/568/small/metal-gold-v-alphabet-letter-logo-icon-design-creative-template-for-company-with-dots-vector.jpg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;1,300&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/9de9d79f9f.js"
+      crossorigin="anonymous"
+    ></script>
+    <script type="module" src="./js/index.js" defer></script>
+    <title>Varun Thaker</title>
+  </head>
+  <body>
+    <header class="header-container" data-js="main-container">
+      <ul class="nav-bar">
+        <li>
+          <div class="tag-image">
+            <a href="#home"
+              ><img src="./assets/Nav_img.png" alt="tag-image"
+            /></a>
+          </div>
+        </li>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#project">Project</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li class="toggle-switch">
+          <button data-js="toggle-switch">
+            <i class="fa-regular  fa-2xl fa-moon" id="theme"></i>
+          </button>
+        </li>
+      </ul>
+    </header>
+    <main class="main-container">
+      <!-- Home -->
+      <section class="home-container" id="home">
+        <article class="home-container --left">
+          <h1 class="name">
+            Hey, I'm <span class="name --span">Varun</span> Thaker
+          </h1>
+          <p class="dev">Software Developer, Frontend & WebApp</p>
+          <div class="rw-wrapper">
+            <p class="iam">I am</p>
+            <div class="rw-words rw-words-1">
+              <p>Thinker</p>
+              <p>Problem Solver.</p>
+              <p>Programmer.</p>
+            </div>
+          </div>
+        </article>
+        <aside class="home-container --right">
+          <img src="/assets/background.png" alt="Profile Photo" />
+        </aside>
+      </section>
+      <!-- About Me -->
+      <section class="aboutme-container" id="about">
+        <h2 class="title">About Me</h2>
+        <picture>
+          <img src="./assets/aboutMe.png" alt="Animated photo" />
+        </picture>
+        <section class="aboutme-subcontainer">
+          <div class="get-to-know">
+            <h3 class="title">Get to know Me!</h3>
+            <div class="content">
+              <p>
+                In 2014, I decided to try my hand at coding and develop a
+                Pac-Man game. It was the firt "WOW!" for me. Fast forward to
+                today, I have completed my masters from TU Berlin and am
+                currently enrolled in a Full-stack Web Development Boot Camp.
+              </p>
+              <br />
+
+              <p>
+                I am passionate about technology and enjoy transforming ideas
+                into functional solutions. I am actively seeking a Developer
+                role where I can contribute, learn, and continue to grow.
+              </p>
+              <br />
+              <p>
+                During my free time, I enjoy exploring nature, hanging out with
+                friends, or simply going for a walk.
+              </p>
+            </div>
+          </div>
+          <div class="skills">
+            <h3 class="title">Skills</h3>
+            <div class="skill-list">
+              <div class="skills-list-item">HTML</div>
+              <div class="skills-list-item">CSS</div>
+              <div class="skills-list-item">JavaScript</div>
+              <div class="skills-list-item">TypeScript</div>
+              <div class="skills-list-item">React</div>
+              <div class="skills-list-item">Node.js</div>
+              <div class="skills-list-item">Next.js</div>
+              <div class="skills-list-item">MongoDB</div>
+              <div class="skills-list-item">Git & GitHub</div>
+              <div class="skills-list-item">Terminal</div>
+              <div class="skills-list-item">Docker</div>
+              <div class="skills-list-item">Vercel</div>
+            </div>
+          </div>
+        </section>
+      </section>
+      <!-- Projects Section-->
+      <section class="project-container" id="project">
+        <h2 class="title">Projects</h2>
+        <!-- project-1 -->
+        <div class="project-list">
+          <div class="project">
+            <img
+              src="https://m.media-amazon.com/images/I/91MteSqsrJL._AC_UF1000,1000_QL80_.jpg"
+              alt="Project image"
+            />
+            <div class="layer">
+              <h3>Rick and Morty App</h3>
+              <p>
+                The project displays the Characters info through API Call. <br />Tech: API Call ,DOM-Manuplation, JS, Advance CSS, Refactoring
+              </p>
+              <div class="icons">
+                <a
+                  href="https://varunthaker.github.io/Ricky-Morty-app/"
+                  class="icon1"
+                  target="_blank"
+                  ><i class="fa-solid fa-globe fa-xs"></i
+                ></a>
+                <a
+                  href="https://github.com/varunthaker/Ricky-Morty-app"
+                  class="icon2"
+                  target="_blank"
+                  ><i class="fa-brands fa-github fa-xs"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+          <div class="project">
+            <img
+              src="https://cdn.iconscout.com/icon/premium/png-256-thumb/e-commerce-2561681-2140287.png?f=webp"
+              alt="Project image"
+            />
+            <div class="layer">
+              <h3>E-commerce Carting System</h3>
+              <p>
+                It demonstrate the basics functionality of an e-commerce Cart
+                System. <br />Tech: React, JS, HTML, CSS
+              </p>
+              <div class="icons">
+                <a
+                  href="https://e-commerce-cart-system.vercel.app/"
+                  class="icon1"
+                  target="_blank"
+                  ><i class="fa-solid fa-globe fa-xs"></i
+                ></a>
+                <a
+                  href="https://github.com/varunthaker/Ecom-Cart_system"
+                  class="icon2"
+                  target="_blank"
+                  ><i class="fa-brands fa-github fa-xs"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+          <div class="project">
+            <img
+              src="https://previews.123rf.com/images/veeksegal/veeksegal1903/veeksegal190300064/121674866-hand-drawn-tic-tac-toe-game-vector-color-illustration-isolated-on-white-background.jpg"
+              alt="Project image"
+            />
+            <div class="layer">
+              <h3>Tic Tac Toe Game</h3>
+              <p>
+                It's a fun game & remind us about our childhood days!.
+                <br />Tech: JS DOM-manuplation, HTML & CSS.
+              </p>
+
+              <div class="icons">
+                <a
+                  href="https://game-js-vthakar3-gmailcom.vercel.app/"
+                  class="icon2"
+                  target="_blank"
+                  ><i class="fa-solid fa-globe fa-xs"></i
+                ></a>
+                <a
+                  href="https://github.com/varunthaker/TicTacToe"
+                  target="_blank"
+                  class="icon2"
+                  ><i class="fa-brands fa-github fa-xs"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+
+          
+
+          <div class="project hidden" data-js="hidden-element">
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/bd/Google_Keep_icon_%282015-2020%29.svg/640px-Google_Keep_icon_%282015-2020%29.svg.png"
+              alt="Project image"
+            />
+            <div class="layer">
+              <h3>Kepper App</h3>
+              <p>
+                It's clone of google Keep App, where one can keep of their notes
+                or task. <br />Tech: React, JS
+              </p>
+              <div class="icons">
+                <a
+                  href="https://react-keeper-app-psi.vercel.app/"
+                  target="_blank"
+                  class="icon1"
+                  ><i class="fa-solid fa-globe fa-xs"></i
+                ></a>
+                <a
+                  href="https://github.com/varunthaker/react_Keeper_app"
+                  target="_blank"
+                  class="icon2"
+                  ><i class="fa-brands fa-github fa-xs"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+
+
+          
+        </div>
+        <button class="see-more" data-js="see-more">Show More</button>
+      </section>
+
+      <!-- Contact Section -->
+      <section class="get-in-touch-container" id="contact">
+        <h3 class="title">Get in Touch</h3>
+        <p>
+          Have a question, an interesting project, or simply want to say Hi. 👋
+          <p>Go on and hit the button!</p>
+        </p>
+        <!-- form -->
+        <article class="form-container">
+          <form action="">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" placeholder="Your Name" autocomplete="off" required /><br />
+            <label for="Email">Email</label>
+            <input type="email" id ="email" name = "email" placeholder="Your e-mail" autocomplete="off" required/><br />
+            <label for="Message">Message</label> 
+            <textarea name="text-area" id="text-area" placeholder="Enter Your Message" autocomplete="off" required></textarea>
+            <button type="submit" class="submit" data-js="submit-form"><span class = "button__text">Submit</span></button>
+          </form>
+        </article>
+      </section>
+    </main>
+    <footer class="footer-container">
+      <h3 class="title">Social</h3>
+      <p>
+        Living, Learning, & Growing each day!
+        <span style="margin-left: 5px"
+          ><i class="fa-solid fa-stairs fa-fade fa-xl"></i
+        ></span>
+      </p>
+      <div class="socila-media">
+        <a href="https://github.com/varunthaker" target="_blank"
+          ><i class="fa-brands fa-github fa-xl"></i
+        ></a>
+        <a href="https://www.linkedin.com/in/varun-thaker-0369/" target="_blank"
+          ><i class="fa-brands fa-linkedin fa-xl"></i
+        ></a>
+        <a href="https://www.xing.com/profile/Varun_Thaker/cv" target="_blank"
+          ><i class="fa-brands fa-xing fa-xl"></i
+        ></a>
+        <a href="mailto:vthakar3@gmail.com"
+          ><i class="fa-solid fa-envelope fa-xl"></i
+        ></a>
+      </div>
+
+      <p>© <span data-js="year"></span> Varun Thaker | All Rights Reserved</p>
+    </footer>
+  </body>
+</html>

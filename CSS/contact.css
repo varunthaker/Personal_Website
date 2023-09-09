@@ -1,0 +1,100 @@
+/* Get in Touch */
+.get-in-touch-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  height: 80vh;
+  padding-top: 40px;
+}
+
+.get-in-touch-container .title {
+  margin: 1rem;
+  font-size: 2rem;
+}
+
+.get-in-touch-container p {
+  font-size: 1.25rem;
+}
+
+.form-container {
+  width: 50%;
+  padding: 10px;
+  border-radius: 10px;
+  margin: 10px;
+  background-color: #262626;
+  display: flex;
+  justify-content: center;
+}
+
+label {
+  padding: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  padding: 10px 10px;
+  margin: 10px 0px;
+  width: 100%;
+  border: 1px solid black;
+  border-radius: 5px;
+  width: 100%;
+}
+
+.submit {
+  border-color: var(--nav-font-color);
+  background-color: #080808;
+  width: 5em;
+  padding: 5px;
+  border-radius: 5px;
+  border-width: 2px;
+  font-size: 0.8em;
+  color: whitesmoke;
+  transition: background-color 0.5s;
+  position: relative;
+}
+
+.submit:hover {
+  background-color: var(--nav-font-color);
+}
+
+.button--loading::after {
+  content: "";
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  border: 4px solid transparent;
+  border-top-color: #ffffff;
+  border-radius: 50%;
+  animation: button-loading-spinner 1s ease infinite;
+}
+
+.button:active {
+  background: black;
+}
+
+.button__text {
+  transition: all 0.2s;
+}
+
+.button--loading .button__text {
+  visibility: hidden;
+  opacity: 0;
+}
+
+@keyframes button-loading-spinner {
+  from {
+    transform: rotate(0turn);
+  }
+
+  to {
+    transform: rotate(1turn);
+  }
+}

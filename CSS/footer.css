@@ -1,0 +1,32 @@
+footer {
+  width: 100%;
+  height: auto;
+  background-color: var(--body-background-color);
+  color: var(--footer-font-color);
+}
+
+.footer-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+  padding: 10px 0;
+}
+
+.socila-media a {
+  margin: 10px;
+  padding: 50px 10px;
+  color: var(--footer-font-color);
+  width: 50px;
+  height: 50px;
+}
+
+.socila-media i {
+  transition: 0.5s ease-in;
+}
+
+.socila-media i:hover {
+  color: var(--nav-font-color);
+  transform: translate(5px, -5px);
+}

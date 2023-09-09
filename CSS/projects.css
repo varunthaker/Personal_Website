@@ -1,0 +1,120 @@
+/* Projects */
+
+.project-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  height: 80vh;
+  margin: 100px;
+}
+
+.project-container .title {
+  margin: 1rem;
+  font-size: 2rem;
+}
+
+.project-list {
+  display: grid;
+  width: 95%;
+  grid-template-columns: repeat(3, minmax(auto, 1fr));
+  grid-template-rows: repeat(1, 1fr);
+  gap: 20px;
+  padding: 10px;
+}
+
+.project {
+  border-radius: 10px;
+  position: relative;
+  overflow: hidden;
+}
+
+.project.hidden {
+  display: none;
+}
+
+.project img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  aspect-ratio: 1/1;
+  border-radius: 10px;
+  /* transition: translate 1s; */
+}
+
+.layer {
+  height: 0;
+  width: 80%;
+  background: linear-gradient(rgba(0, 0, 0, 0.6), var(--nav-font-color));
+  border-radius: 10px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  /* makes content hidden */
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 5px 40px;
+  text-align: center;
+  transition: height 0.5s;
+}
+
+.layer h3 {
+  margin-bottom: 20px;
+}
+
+.layer p {
+  margin-bottom: 20px;
+}
+
+.layer .icons {
+  margin: 10px;
+}
+
+.layer .icon1,
+.icon2 {
+  padding: 0px 10px;
+  margin-right: 10px;
+  color: var(--nav-font-color);
+  text-decoration: none;
+  /* line-height: 60px; */
+  font-size: 35px;
+  background-color: #fff;
+  border-radius: 50%;
+}
+
+.project:hover img {
+  transform: scale(1.1);
+}
+
+.project:hover .layer {
+  height: 100%;
+  width: 84.5%;
+}
+
+.see-more {
+  border-color: var(--nav-font-color);
+  background-color: #080808;
+  width: 10em;
+  font-size: 1rem;
+  color: whitesmoke;
+  padding: 10px 10px;
+  border-radius: 5px;
+  border-width: 3px;
+  transition: background-color 0.1s;
+}
+
+/* .button1 {
+    margin: 20px 0;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+  } */
+
+.see-more:hover {
+  background-color: var(--nav-font-color);
+}

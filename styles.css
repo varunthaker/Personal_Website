@@ -1,0 +1,39 @@
+@import url("./CSS/header.css");
+@import url("./CSS/footer.css");
+@import url("./CSS/main.css");
+@import url("./CSS/home.css");
+@import url("./CSS/about.css");
+@import url("./CSS/projects.css");
+@import url("./CSS/contact.css");
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+:root {
+  --body-background-color: #0f405a;
+  --font-family: "Open Sans", sans-serif;
+  --font-color: white;
+  --nav-font-color: #fc7753;
+  --footer-font-color: aliceblue;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: black;
+  color: var(--font-color);
+  font-family: var(--font-family);
+}
+
+.light-mode {
+  background-color: var(--footer-font-color);
+  color: black;
+}

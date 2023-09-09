@@ -1,0 +1,65 @@
+/* About me Section */
+
+.aboutme-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  height: 100vh;
+  width: 100%;
+  padding-top: 200px;
+}
+
+.aboutme-container .title {
+  margin: 1rem;
+  font-size: 2rem;
+}
+
+.aboutme-subcontainer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.get-to-know {
+  padding: 20px;
+  margin: 20px;
+  width: 100%;
+}
+
+.get-to-know .title,
+.skills .title {
+  font-size: 1.5rem;
+  margin: 1rem 0;
+  text-align: top;
+  top: 0;
+  left: 0;
+}
+
+.get-to-know .content {
+  line-height: 1.5rem;
+  font-size: 1.15rem;
+}
+
+.skills {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  margin: 10px;
+  width: 100%;
+}
+
+.skill-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.skills-list-item {
+  margin: 5px;
+  padding: 10px;
+  background-color: antiquewhite;
+  border-radius: 10px;
+  color: slategray;
+  border: solid 0.5px black;
+}

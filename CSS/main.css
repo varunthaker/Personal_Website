@@ -2,3 +2,56 @@
   display: flex;
   flex-direction: column;
 }
+
+i.fa-solid {
+  display: none;
+}
+
+/* Media Query */
+
+@media only screen and (max-width: 600px) {
+  .home-container .--right img {
+    content: url(../assets/backgroundmq.png);
+    width: 250px;
+    max-height: min-content;
+  }
+  .home-container .--left {
+    margin-left: 20px;
+  }
+  .home-container .--left h1 {
+    font-size: 1.5rem !important;
+  }
+  .home-container .--left .dev {
+    font-size: 1rem !important;
+    margin-left: 10px;
+  }
+  .iam {
+    font-size: 1.5rem !important;
+  }
+  .rw-words {
+    font-size: 1.5rem !important;
+  }
+  i.fa-solid {
+    display: block;
+    font-size: 25px;
+  }
+  .nav-bar {
+    background-color: blue;
+    position: fixed;
+    flex-direction: column;
+    top: 0;
+    right: 0;
+    width: 200px;
+    height: 100vh;
+  }
+  .tag-image img {
+    left: 30px;
+    top: 30px;
+  }
+  li .fa-solid {
+    position: relative;
+    bottom: 450px;
+    left: 10px;
+    font-size: 40px;
+  }
+}

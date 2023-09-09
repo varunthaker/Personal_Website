@@ -26,10 +26,6 @@
   font-size: 1.5rem;
 }
 
-.dev {
-  font-size: 50px;
-}
-
 /* Text Animation Start */
 .rw-wrapper {
   width: 70%;
@@ -94,12 +90,10 @@
 
 .home-container .--right {
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 
 .home-container .--right img {
   height: 60vh;
-  width: 100%;
 }

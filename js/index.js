@@ -64,3 +64,19 @@ form.addEventListener("submit", (e) => {
     console.error("Error!", error.message);
   }
 });
+
+//for responsiveness
+
+const closeMenu = document.querySelector('[data-js="close"]');
+const openMenu = document.querySelector('[data-js="open"]');
+const navBar = document.querySelector('[data-js="nav-bar"]');
+
+openMenu.addEventListener("click", () => {
+  navBar.style.right = "0";
+  openMenu.style.visibility = "hidden";
+});
+
+closeMenu.addEventListener("click", () => {
+  navBar.style.right = "-200px";
+  openMenu.style.visibility = "visible";
+});

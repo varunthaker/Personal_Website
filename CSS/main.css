@@ -3,8 +3,9 @@
   flex-direction: column;
 }
 
-i.fa-solid {
+i.nav-icon {
   display: none;
+  color: var(--nav-font-color);
 }
 
 /* Media Query */
@@ -12,7 +13,9 @@ i.fa-solid {
 @media only screen and (max-width: 600px) {
   .home-container .--right img {
     content: url(../assets/backgroundmq.png);
-    width: 250px;
+
+    height: 300px !important;
+    scale: 1/1;
     max-height: min-content;
   }
   .home-container .--left {
@@ -40,18 +43,50 @@ i.fa-solid {
     position: fixed;
     flex-direction: column;
     top: 0;
-    right: 0;
+    right: -200px;
     width: 200px;
     height: 100vh;
+    transition: right 0.5;
   }
   .tag-image img {
     left: 30px;
     top: 30px;
   }
-  li .fa-solid {
+  li .nav-icon {
     position: relative;
-    bottom: 450px;
+    bottom: 700px;
     left: 10px;
     font-size: 40px;
+  }
+  li.toggle-switch {
+    position: relative;
+    /* bottom: 800px; */
+  }
+  i.fa-bars {
+    position: relative;
+    z-index: 0;
+    left: 500px;
+    top: 40px;
+  }
+  .aboutme-subcontainer {
+    flex-wrap: wrap;
+  }
+
+  .get-to-know {
+    padding: 5px;
+  }
+  .skills {
+    margin-left: 20px !important;
+  }
+  .project-list {
+    grid-template-columns: 1fr !important;
+    gap: 20px;
+    padding: 10px;
+  }
+  .get-in-touch-container p {
+    font-size: 0.5rem;
+    padding: 20px;
+  }
+  .socila-media a {
   }
 }

@@ -4,7 +4,6 @@
   justify-content: center;
   align-items: center;
   gap: 10px;
-  height: 80vh;
   margin: 100px;
 }
 
@@ -38,13 +37,17 @@
   width: 80%;
   aspect-ratio: 1/1;
   border-radius: 10px;
-  /* transition: translate 1s; */
+  transition: translate 1s;
 }
 
 .layer {
   height: 0;
   width: 80%;
-  background: linear-gradient(rgba(0, 0, 0, 0.6), var(--nav-font-color));
+  color: var(--nav-image-border);
+  background: linear-gradient(
+    var(--top-background-color),
+    var(--top-font-color)
+  );
   border-radius: 10px;
   position: absolute;
   bottom: 0;
@@ -70,18 +73,27 @@
 
 .layer .icons {
   margin: 10px;
+  display: flex;
+  justify-content: center;
+  width: 100%;
 }
 
-.layer .icon1,
-.icon2 {
+a.icon {
   padding: 0px 10px;
   margin-right: 10px;
-  color: var(--nav-font-color);
+  color: var(--top-font-color);
   text-decoration: none;
   /* line-height: 60px; */
   font-size: 35px;
-  background-color: #fff;
+  background-color: var(--top-background-color);
   border-radius: 50%;
+  display: flex;
+  width: 50px;
+  height: 50px;
+}
+
+a.icon i {
+  margin: auto;
 }
 
 .project:hover img {
@@ -95,7 +107,7 @@
 
 .see-more {
   border-color: var(--nav-font-color);
-  background-color: #080808;
+  background-color: var(--nav-image-border);
   width: 10em;
   font-size: 1rem;
   color: whitesmoke;
@@ -105,13 +117,7 @@
   transition: background-color 0.1s;
 }
 
-/* .button1 {
-    margin: 20px 0;
-    display: flex;
-    text-align: center;
-    justify-content: center;
-  } */
-
 .see-more:hover {
-  background-color: var(--nav-font-color);
+  background-color: var(--top-hover-color);
+  color: var(--top-background-color);
 }

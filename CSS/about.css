@@ -1,12 +1,13 @@
 .aboutme-container {
+  background-color: var(--nav-image-border);
+  color: var(--top-background-color);
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   gap: 10px;
-  height: 100vh;
   width: 100%;
-  padding-top: 200px;
+  padding-top: 100px;
 }
 
 .aboutme-container .title {
@@ -56,8 +57,7 @@
 .skills-list-item {
   margin: 5px;
   padding: 10px;
-  background-color: antiquewhite;
+  background-color: var(--top-background-color);
   border-radius: 10px;
-  color: slategray;
-  border: solid 0.5px black;
+  color: var(--top-hover-color);
 }

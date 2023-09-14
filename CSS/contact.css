@@ -1,11 +1,12 @@
 .get-in-touch-container {
+  background-color: var(--nav-image-border);
+  color: var(--top-background-color);
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   gap: 10px;
   height: 80vh;
-  padding-top: 40px;
 }
 
 .get-in-touch-container .title {
@@ -44,7 +45,7 @@ textarea {
 
 .submit {
   border-color: var(--nav-font-color);
-  background-color: #080808;
+  background-color: var(--nav-image-border);
   width: 5em;
   padding: 5px;
   border-radius: 5px;
@@ -56,7 +57,7 @@ textarea {
 }
 
 .submit:hover {
-  background-color: var(--nav-font-color);
+  background-color: var(--top-font-color);
 }
 
 .button--loading::after {
@@ -76,7 +77,7 @@ textarea {
 }
 
 .button:active {
-  background: black;
+  background: var(--top-background-color);
 }
 
 .button__text {

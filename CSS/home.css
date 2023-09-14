@@ -4,6 +4,7 @@
   display: flex;
   justify-content: space-around;
   align-items: center;
+  background-color: var(--top-background-color);
 }
 
 .home-container .--left {
@@ -19,7 +20,7 @@
   font-size: 2rem;
 }
 .--span {
-  color: var(--nav-font-color);
+  color: var(--top-font-color);
 }
 
 .home-container .--left .dev {
@@ -51,7 +52,7 @@
 .rw-words-1 p {
   /* max-width: 0; */
   /* opacity: 0; */
-  color: var(--nav-font-color);
+  color: var(--top-font-color);
   animation: slideDown 10s ease-in infinite;
   position: absolute;
   top: 0;

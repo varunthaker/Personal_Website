@@ -1,8 +1,8 @@
 footer {
   width: 100%;
   height: auto;
-  background-color: var(--body-background-color);
-  color: var(--footer-font-color);
+  background-color: var(--top-background-color);
+  color: var(--nav-image-border);
 }
 
 .footer-container {
@@ -26,7 +26,11 @@ footer {
   transition: 0.5s ease-in;
 }
 
+.footer-container .inline {
+  display: inline;
+}
+
 .socila-media i:hover {
-  color: var(--nav-font-color);
+  color: var(--top-font-color);
   transform: translate(5px, -5px);
 }

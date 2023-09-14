@@ -16,11 +16,16 @@
 }
 
 :root {
-  --body-background-color: #0f405a;
+  --top-background-color: #f7f2f0;
+  --top-font-color: #f87d08;
+  --top-hover-color: #7b7b7b;
+  --nav-image-border: #0f405a;
+
+  /* --body-background-color: #0f405a;
   --font-family: "Open Sans", sans-serif;
   --font-color: white;
   --nav-font-color: #fc7753;
-  --footer-font-color: aliceblue;
+  --footer-font-color: aliceblue; */
 }
 
 html {
@@ -28,12 +33,13 @@ html {
 }
 
 body {
-  background-color: black;
-  color: var(--font-color);
   font-family: var(--font-family);
+  color: var(--nav-image-border);
 }
 
 .light-mode {
-  background-color: var(--footer-font-color);
-  color: black;
+  --top-background-color: #0f405a;
+  --top-font-color: #f87d08;
+  /* --top-hover-color: #f87d08; */
+  --nav-image-border: #f7f2f0;
 }

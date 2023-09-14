@@ -1,4 +1,5 @@
 .main-container {
+  background-color: var(--top-background-color);
   display: flex;
   flex-direction: column;
 }
@@ -39,7 +40,7 @@ i.nav-icon {
     font-size: 25px;
   }
   .nav-bar {
-    background-color: blue;
+    background-color: var(--nav-image-border);
     position: fixed;
     flex-direction: column;
     top: 0;
@@ -54,13 +55,12 @@ i.nav-icon {
   }
   li .nav-icon {
     position: relative;
-    bottom: 700px;
+    bottom: 650px;
     left: 10px;
     font-size: 40px;
   }
   li.toggle-switch {
     position: relative;
-    /* bottom: 800px; */
   }
   i.fa-bars {
     position: relative;
@@ -86,5 +86,18 @@ i.nav-icon {
   .get-in-touch-container p {
     font-size: 0.5rem;
     padding: 20px;
+  }
+
+  .layer h3 {
+    font-size: 20px !important;
+  }
+  .layer p {
+    font-size: 15px !important;
+  }
+
+  .icons {
+    display: flex;
+    justify-content: center;
+    width: 100%;
   }
 }

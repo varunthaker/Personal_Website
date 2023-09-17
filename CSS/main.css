@@ -1,5 +1,5 @@
 .main-container {
-  background-color: var(--top-background-color);
+  /* background-color: var(--top-background-color); */
   display: flex;
   flex-direction: column;
 }
@@ -16,7 +16,7 @@ i.nav-icon {
     content: url(../assets/backgroundmq.png);
 
     height: 300px !important;
-    scale: 1/1;
+    scale: 1/1.25;
     max-height: min-content;
   }
   .home-container .--left {

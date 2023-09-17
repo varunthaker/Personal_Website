@@ -16,25 +16,29 @@
 }
 
 :root {
-  --top-background-color: #f7f2f0;
-  --top-font-color: #f87d08;
-  --top-hover-color: #7b7b7b;
-  --nav-image-border: #0f405a;
+  --background-color-1: #f7f2f0;
+  --background-color-2: #373c52;
+  --font-color-one: #f87d08;
+
+  --font-style-1: "Raleway", sans-serif;
+  --font-style-2: "DM Serif Display", serif;
+
+  --nav-image-border: #2f2d2d;
 
   /* --body-background-color: #0f405a;
-  --font-family: "Open Sans", sans-serif;
+
   --font-color: white;
   --nav-font-color: #fc7753;
   --footer-font-color: aliceblue; */
+  --font-family: "Open Sans", sans-serif;
 }
 
 html {
   scroll-behavior: smooth;
+  font-family: var(--font-style-1);
 }
 
 body {
-  font-family: var(--font-family);
-  color: var(--nav-image-border);
 }
 
 .light-mode {

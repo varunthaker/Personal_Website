@@ -1,5 +1,5 @@
 .aboutme-container {
-  background-color: var(--nav-image-border);
+  background-color: var(--background-color-2);
   color: var(--top-background-color);
   display: flex;
   flex-direction: column;
@@ -39,6 +39,8 @@
 .get-to-know .content {
   line-height: 1.5rem;
   font-size: 1.15rem;
+  text-align: justify;
+  text-justify: inter-word;
 }
 
 .skills {

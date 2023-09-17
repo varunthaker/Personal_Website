@@ -1,37 +1,42 @@
 .home-container {
+  background-color: var(--background-color-1);
+  font-family: var(--font-style-2);
+  color: var(--font-color-two);
   height: 100vh;
   width: 100%;
   display: flex;
   justify-content: space-around;
   align-items: center;
-  background-color: var(--top-background-color);
 }
 
 .home-container .--left {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
   flex-wrap: wrap;
   gap: 10px;
+  margin-left: 80px;
 }
 
 .home-container .--left h1 {
   font-size: 2rem;
+  font-weight: 1000;
 }
 .--span {
-  color: var(--top-font-color);
+  color: var(--font-color-one);
 }
 
 .home-container .--left .dev {
+  margin-top: 20px;
   font-size: 1.5rem;
+  font-family: var(--font-style-1);
 }
 
 /* Text Animation Start */
 .rw-wrapper {
   width: 70%;
   position: relative;
-  margin: 25px auto 0 auto;
   padding: 10px;
   font-size: 1.5rem;
   display: flex;
@@ -44,15 +49,13 @@
 
 .rw-words {
   display: inline-block;
-  margin-left: 16px;
   position: relative;
   font-size: 2rem;
+  margin-left: 10px;
 }
 
 .rw-words-1 p {
-  /* max-width: 0; */
-  /* opacity: 0; */
-  color: var(--top-font-color);
+  color: var(--font-color-one);
   animation: slideDown 10s ease-in infinite;
   position: absolute;
   top: 0;

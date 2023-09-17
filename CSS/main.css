@@ -12,6 +12,9 @@ i.nav-icon {
 /* Media Query */
 
 @media only screen and (max-width: 600px) {
+  .home-container {
+    /* flex-wrap: wrap; */
+  }
   .home-container .--right img {
     content: url(../assets/backgroundmq.png);
 
@@ -19,9 +22,7 @@ i.nav-icon {
     scale: 1/1.25;
     max-height: min-content;
   }
-  .home-container .--left {
-    margin-left: 20px;
-  }
+
   .home-container .--left h1 {
     font-size: 1.5rem !important;
   }

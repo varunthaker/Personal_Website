@@ -1,7 +1,8 @@
 .header-container {
   width: 100%;
-  background-color: var(--top-background-color);
-  color: var(--top-font-color);
+  background-color: var(--background-color-2);
+  color: var(--font-color-one);
+  font-style: var(--font-style-two);
   position: fixed;
   z-index: 1;
   top: 0;
@@ -18,39 +19,30 @@
 .nav-bar li {
   margin: 15px;
   padding: 10px;
-
-  height: auto;
 }
 
 .tag-image img {
   width: 50px;
   border-radius: 50%;
   position: absolute;
-  left: 15px;
-  bottom: 20px;
+  left: 30px;
+  top: 10px;
   border: 2px solid var(--nav-image-border);
 }
 
 .nav-bar li a {
   text-decoration: none;
-  color: var(--top-font-color);
+  color: var(--background-color-1);
   font-size: 20px;
-  font-weight: bolder;
-  transition: color 1s;
+  font-weight: 900;
+  font-family: "Raleway", sans-serif;
+  transition: color 0.2s;
 }
 
 .nav-bar li a:hover {
-  color: var(--top-hover-color);
+  color: var(--font-color-one);
 }
 
-.nav-bar li button {
-  width: 45px;
-  height: 45px;
-  border-radius: 50%;
-  background-color: var(--nav-image-border);
-  text-align: center;
-  display: inline-block;
-}
 .nav-bar li i {
   align-self: center;
   color: var(--top-background-color);

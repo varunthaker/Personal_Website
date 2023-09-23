@@ -23,21 +23,20 @@
   </head>
   <body>
     <header class="header-container" data-js="main-container">
-      <div class="tag-image">
-        <a href="#home"
-          ><img src="./assets/Nav_img.png" alt="tag-image"
-        /></a>
-      </div>
       <ul class="nav-bar" data-js="nav-bar">
+        <li class="tag-image">
+          <a href="#home"
+            ><img src="./assets/Nav_img.png" alt="tag-image"
+          /></a>
+        </li>
         <li><a href="#home">Home</a></li>
         <li><a href="#about">About</a></li>
         <li><a href="#project">Project</a></li>
         <li><a href="#contact">Contact</a></li>
-
       </ul>
-      <div>
+      <!-- <div>
         <i class="nav-icon fa-solid fa-bars " data-js="open"></i>
-      </div>
+      </div> -->
     </header>
     <main class="main-container">
       <!-- Home -->
@@ -46,7 +45,7 @@
           <h1 class="name">
             Hi <span class="wave">👋🏾 </span> I'm <span class="name --span">Varun</span> Thaker 
           </h1>
-          <p class="dev">Software Developer, Frontend & WebApp</p>
+          <p class="dev">Full-stack Web Developer</p>
           <div class="rw-wrapper">
             <p class="iam">I am a</p>
             <div class="rw-words rw-words-1">
@@ -56,9 +55,11 @@
             </div>
           </div>
         </article>
+        <div class = "half-circle-top-right"></div>
         <aside class="home-container --right">
           <img src="/assets/background1.png" alt="Profile Photo" />
         </aside>
+        <div class = "half-circle-top-middle"></div>
       </section>
       <!-- About Me -->
       <section class="aboutme-container" id="about">
@@ -108,12 +109,17 @@
             </div>
           </div>
         </section>
+        <div class ="half-circle-aboutme"></div>
       </section>
       <!-- Projects Section-->
       <section class="project-container" id="project">
-        <h2 class="title">Projects</h2>
+        
         <!-- project-1 -->
-        <div class="project-list">
+        
+          <div class = "project-left">Project Left</div>
+          <div class = "half-circle-project"></div>
+          <div class="project-list">
+            <h2 class="title">Projects</h2>
           <div class="project">
             <img
               src="https://m.media-amazon.com/images/I/91MteSqsrJL._AC_UF1000,1000_QL80_.jpg"
@@ -196,11 +202,9 @@
             </div>
           </div>
 
-          
-
           <div class="project hidden" data-js="hidden-element">
             <img
-              src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/bd/Google_Keep_icon_%282015-2020%29.svg/640px-Google_Keep_icon_%282015-2020%29.svg.png"
+              src="https://www.flaticon.com/free-icon/js_5968292"
               alt="Project image"
             />
             <div class="layer">
@@ -224,12 +228,9 @@
                 ></a>
               </div>
             </div>
-          </div>
-
-
-          
         </div>
         <button class="see-more" data-js="see-more">Show More</button>
+      </div>
       </section>
 
       <!-- Contact Section -->

@@ -1,7 +1,7 @@
 footer {
   width: 100%;
   height: auto;
-  background-color: var(--top-background-color);
+  background-color: var(--background-color-2);
   color: var(--nav-image-border);
 }
 

@@ -1,5 +1,5 @@
 .aboutme-container {
-  background-color: #b8b9bd;
+  background-color: var(--background-color-2);
   color: var(--top-background-color);
   display: flex;
   flex-direction: column;
@@ -8,6 +8,7 @@
   gap: 10px;
   width: 100%;
   padding-top: 100px;
+  position: relative;
 }
 
 .aboutme-container .title {
@@ -62,4 +63,16 @@
   background-color: var(--top-background-color);
   border-radius: 10px;
   color: var(--top-hover-color);
+}
+
+.half-circle-aboutme {
+  z-index: 1;
+  position: absolute;
+  top: 100%;
+  right: 43%;
+  transform: translatey(-50%);
+  height: 150px;
+  width: 150px;
+  background-color: var(--background-color-2);
+  border-radius: 50%;
 }

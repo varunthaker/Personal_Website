@@ -27,23 +27,6 @@ seeMoreButton.addEventListener("click", () => {
   }
 });
 
-const toggleButton = document.querySelector('[data-js="toggle-switch"]');
-const toggleIcon = document.getElementById("theme");
-
-toggleButton.addEventListener("click", () => {
-  if (toggleIcon.classList[2] === "fa-moon") {
-    toggleIcon.classList.remove("fa-moon");
-    toggleIcon.classList.add("fa-sun");
-    bodyElement.classList.add("light-mode");
-  } else if (toggleIcon.classList[2] === "fa-sun") {
-    toggleIcon.classList.remove("fa-sun");
-    toggleIcon.classList.add("fa-moon");
-    bodyElement.classList.remove("light-mode");
-  } else {
-    return null;
-  }
-});
-
 //Getting data to the Excel Sheet
 const scriptURL =
   "https://script.google.com/macros/s/AKfycbzn418HyXmqNNmO4kLkPp7kVxzWyRoca-OtXxeMrvPbomzRtgc75ANLEPYAS2ZwVBuU/exec";

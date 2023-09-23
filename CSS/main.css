@@ -12,9 +12,6 @@ i.nav-icon {
 /* Media Query */
 
 @media only screen and (max-width: 600px) {
-  .home-container {
-    /* flex-wrap: wrap; */
-  }
   .home-container .--right img {
     content: url(../assets/backgroundmq.png);
 

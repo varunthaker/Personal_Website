@@ -23,7 +23,7 @@
   --font-style-1: "Raleway", sans-serif;
   --font-style-2: "DM Serif Display", serif;
 
-  --nav-image-border: #2f2d2d;
+  --nav-image-border: #b8b9bd;
 
   /* --body-background-color: #0f405a;
 
@@ -36,14 +36,4 @@
 html {
   scroll-behavior: smooth;
   font-family: var(--font-style-1);
-}
-
-body {
-}
-
-.light-mode {
-  --top-background-color: #0f405a;
-  --top-font-color: #f87d08;
-  /* --top-hover-color: #f87d08; */
-  --nav-image-border: #f7f2f0;
 }
